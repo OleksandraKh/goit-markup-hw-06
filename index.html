@@ -57,6 +57,17 @@
 
     <main>
       <section class="hero-section">
+        <div>
+        <form class="form js-speaker-form">
+          <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
+          <label for="name">Имя</label>
+          <input type="text" name="user-name" id="name"><br>
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel"><br>
+          <label for="mail">Почта</label>
+          <input type="email" name="mail" id="mail"><br>
+          <button class="hero-button" type="submit">Отправить</button>
+        </form></div>
         <div class="hero">
           <h1 class="hero-title">
             эффективное решение <br> 
@@ -459,7 +470,7 @@
             <strong class="footer-text">подпишитесь на рассылку</strong>
           </h2>
           <div class="mail-icon">
-            <h3 class="mail-btn">Email</h3>
+            <input class="mail-btn" type="email" name="mail">
             <button class="btn-footer" aria-label="Подписаться">
               Подписаться
               <svg class="icon-send" width="24" height="24">
@@ -471,5 +482,20 @@
       </div>
       <p class="autor">2020 | Developed by GoIT Students</p>
     </footer>
+    <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
