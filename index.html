@@ -57,17 +57,42 @@
 
     <main>
       <section class="hero-section">
-        <div>
-        <form class="form js-speaker-form">
-          <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
-          <label for="name">Имя</label>
-          <input type="text" name="user-name" id="name"><br>
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel"><br>
-          <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail"><br>
-          <button class="hero-button" type="submit">Отправить</button>
-        </form></div>
+        
+          <form class="form js-speaker-form">
+            <svg class="icon-close-black">
+              <use
+                  href="./images/symbol-defs.svg#icon-close-black"
+                  width="18"
+                  height="18"
+                ></use>
+            </svg>
+            <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
+              <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" name="user-name" id="name" autofocus>
+              </div>
+            
+              <div class="form-group">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel">
+              </div>
+
+              <div class="form-group">
+                <label for="mail">Почта</label>
+                <input type="email" name="mail" id="mail">
+              </div>    
+              <div class="form-group">
+                <textarea name="commend" id="commend" rows="8" placeholder="Комментарий"></textarea>
+              </div>    
+
+              <div class="form-group">
+                <input type="checkbox" name="consent" id="policy">
+                <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> </label>
+              </div>
+          
+              <button class="hero-button" type="submit">Отправить</button>
+          </form>
+       
         <div class="hero">
           <h1 class="hero-title">
             эффективное решение <br> 
@@ -470,13 +495,14 @@
             <strong class="footer-text">подпишитесь на рассылку</strong>
           </h2>
           <div class="mail-icon">
-            <input class="mail-btn" type="email" name="mail">
-            <button class="btn-footer" aria-label="Подписаться">
+            <form class="form-btn js-speaker-form">
+            <input class="mail-btn" type="email" name="mail" placeholder="Email">
+            <button type="submit" class="btn-footer" aria-label="Подписаться">
               Подписаться
               <svg class="icon-send" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-send"></use>
                 </svg>
-            </button>
+            </button></form>
           </div>
         </div>
       </div>
