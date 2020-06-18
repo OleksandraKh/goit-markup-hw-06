@@ -1067,7 +1067,8 @@ footer {
 .form{
   display: block;
   position: absolute;
-  
+  width: 528px;
+  height: 581px;
   align-items: center;
 
   background: #FFFFFF;
@@ -1079,22 +1080,52 @@ footer {
   flex-direction: column;
   margin-bottom: 28px;
   margin-left:40px;
+  width: 448px;
+  height: 40px;
   margin-right: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.vector{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.icon-vector-1{
-  color: black;
+.icon-vector{
+  
 width: 30px;
 height: 30px;
+border-radius: 30px;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-size: contain;
+  fill: var(--title-text-color);
 
 }
-.vecto_man{
+.icon-man{
+  position: absolute;
   width: 22px;
 
   background-size: contain;
   fill: var(--title-text-color);
 }
+.icon-tel{
+  width: 22px;
 
+  background-size: contain;
+  fill: var(--title-text-color);
+}
+.icon-mail-1{
+  width: 22px;
+
+  background-size: contain;
+  fill: var(--title-text-color);
+}
 
 .form-group input{
   margin: 0;
@@ -1118,5 +1149,12 @@ height: 30px;
 }
 
 textarea{
+  display: flex;
+  flex-direction: column;
   resize:none;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
