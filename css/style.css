@@ -1079,7 +1079,7 @@ footer {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  transition-property: fill, border-color;
+  transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1094,7 +1094,8 @@ footer {
 .vector:hover,
 .vector:focus {
   fill: var(--accent-color);
-  border-color:var(--accent-color);
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 /* Форма регистрации */
@@ -1124,8 +1125,8 @@ footer {
   left: 19px;
   transform: translateY(-25%);
   width: 12px;
-  display: inline;
-  fill: #212121;
+  /* display: inline; */
+  /* fill: #212121; */
 }
 .icon-tel{
   position: absolute;
@@ -1133,8 +1134,8 @@ footer {
   left: 19px;
   transform: translateY(-25%);
   width: 13px;
-  display: inline;
-  fill: #212121;
+  /* display: inline; */
+  /* fill: #212121; */
 }
 .icon-mail-1{
   position: absolute;
@@ -1142,19 +1143,22 @@ footer {
   left: 17px;
   transform: translateY(-25%);
   width: 22px;
-  display: inline;
-  fill: #212121;
+  /* display: inline; */
+  /* fill: #212121; */
 }
 .form-input:focus+ .form-label,
 .form-input:not(:placeholder-shown)+ .form-label{
   color: var(--accent-color);
+  
   font-size: 12px;
   line-height: 14px;
   left: 0px;
   transform: translateY(-250%);
+  outline: none;
 }
-.form-input:placeholder-shown{
-
+.form-input:focus,
+textarea:focus {
+border-color: var(--accent-color);
 }
 
 .form-input:focus~ .icon-man,  
@@ -1164,16 +1168,15 @@ fill: var(--accent-color);
 }
 
 .form-input{
-  /* margin: 0; */
-  /* margin-left: 40px; */
   margin-bottom: 28px;
   padding: 12px 42px;
   font: inherit;
   width: 448px;
-  height: 40px;
+  /* height: 40px; */
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border-radius: 4px;
+  outline: none;
 }
 .form-label{
   position: absolute;
@@ -1210,6 +1213,7 @@ textarea{
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
 }
 .form-button {
   border-radius: 4px;
@@ -1228,11 +1232,12 @@ textarea{
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .form-button:hover,
 .form-button:focus {
   background-color: var(--primary-white-color);
   color: var(--accent-color);
-  border-color:var(--accent-color);
+  border-color: var(--accent-color);
 }
