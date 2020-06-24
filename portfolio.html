@@ -335,13 +335,20 @@
             <strong class="footer-text">подпишитесь на рассылку</strong>
           </h2>
           <div class="mail-icon">
-            <h3 class="mail-btn">Email</h3>
-            <button class="btn-footer" aria-label="Подписаться">
-              Подписаться
-              <svg class="icon-send" width="24" height="24">
+            <form class="form-btn js-speaker-form">
+              <input
+                class="mail-btn"
+                type="email"
+                name="mail"
+                placeholder="Email"
+              />
+              <button type="submit" class="btn-footer" aria-label="Подписаться">
+                Подписаться
+                <svg class="icon-send" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-send"></use>
                 </svg>
-            </button>
+              </button>
+            </form>
           </div>
         </div>
       </div>
