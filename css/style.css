@@ -247,6 +247,7 @@ body {
   background-color: var(--primary-white-color);
   color: var(--accent-color);
   border-color:var(--accent-color);
+  outline: none;
 }
 
 
@@ -828,6 +829,11 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  
+}
+.mail-btn:focus{
+  outline: none;
+   border: 1px solid var(--accent-color);
 }
 
 .btn-footer {
@@ -855,6 +861,7 @@ footer {
   color: var(--accent-color);
   fill: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
 }
 
 .btn-footer .icon-send {
@@ -1035,6 +1042,7 @@ footer {
 .button-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  outline: none;
 }
 
 /* Модалка */
@@ -1115,8 +1123,39 @@ footer {
   text-align: center;
 }
 
+.form-input:focus+ .form-label,
+.form-input:not(:placeholder-shown)+ .form-label{
+  color: var(--accent-color);
+  
+  font-size: 12px;
+  line-height: 14px;
+  left: 0px;
+  transform: translateY(-250%);
+  outline: none;
+}
+
 .form-group{
   position: relative;
+}
+
+.form-input{
+  margin-bottom: 28px;
+  padding: 12px 42px;
+  font: inherit;
+  width: 448px;
+  /* height: 40px; */
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  /* box-sizing: border-box; */
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-label{
+  position: absolute;
+  top: 25%;
+  left: 42px;
+  transform: translateY(-25%);
+  transition: transform 250ms linear;
 }
 
 .icon-man{
@@ -1146,20 +1185,6 @@ footer {
   /* display: inline; */
   /* fill: #212121; */
 }
-.form-input:focus+ .form-label,
-.form-input:not(:placeholder-shown)+ .form-label{
-  color: var(--accent-color);
-  
-  font-size: 12px;
-  line-height: 14px;
-  left: 0px;
-  transform: translateY(-250%);
-  outline: none;
-}
-.form-input:focus,
-textarea:focus {
-border-color: var(--accent-color);
-}
 
 .form-input:focus~ .icon-man,  
 .form-input:focus~ .icon-tel,
@@ -1167,24 +1192,13 @@ border-color: var(--accent-color);
 fill: var(--accent-color);
 }
 
-.form-input{
-  margin-bottom: 28px;
-  padding: 12px 42px;
-  font: inherit;
-  width: 448px;
-  /* height: 40px; */
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  /* box-sizing: border-box; */
-  border-radius: 4px;
-  outline: none;
+.form-input:focus,
+textarea:focus {
+border-color: var(--accent-color);
 }
-.form-label{
-  position: absolute;
-  top: 25%;
-  left: 42px;
-  transform: translateY(-25%);
-  transition: transform 250ms linear;
-}
+
+
+
 
 
 .checkbox-group{
