@@ -25,11 +25,14 @@
           >
           <ul class="site-nav list">
             <li class="site-item">
-              <a href="./index.html" class="site-link studio">Студия</a></li>
+              <a href="./index.html" class="site-link studio">Студия</a>
+            </li>
             <li class="site-item">
               <a href="./portfolio.html" class="site-link">Портфолио</a>
             </li>
-            <li class="site-item"><a href="#" class="site-link">Контакты</a></li>
+            <li class="site-item">
+              <a href="#" class="site-link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <div class="contact-container">
@@ -59,12 +62,11 @@
       <section class="hero-section">
         <div class="hero">
           <h1 class="hero-title">
-            эффективное решение <br> 
+            эффективное решение <br />
             для вашего бизнеса
           </h1>
           <button class="hero-button" data-open-modal>Заказать услугу</button>
         </div>
-        
       </section>
 
       <!-- Features -->
@@ -460,75 +462,99 @@
           </h2>
           <div class="mail-icon">
             <form class="form-btn js-speaker-form">
-            <input class="mail-btn" type="email" name="mail" placeholder="Email">
-            <button type="submit" class="btn-footer" aria-label="Подписаться">
-              Подписаться
-              <svg class="icon-send" width="24" height="24">
+              <input
+                class="mail-btn"
+                type="email"
+                name="mail"
+                placeholder="Email"
+              />
+              <button type="submit" class="btn-footer" aria-label="Подписаться">
+                Подписаться
+                <svg class="icon-send" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-send"></use>
                 </svg>
-            </button></form>
+              </button>
+            </form>
           </div>
         </div>
       </div>
       <p class="autor">2020 | Developed by GoIT Students</p>
     </footer>
 
-
-
-     <div class="backdrop is-hidden"data-backdrop> 
-      <div class="modal">
+    <div class="backdrop is-hidden" data-backdrop>
+      <!-- <div class="modal"> -->
         <form class="form js-speaker-form" autocomplete="off">
           <button class="vector" data-close-modal>
             <svg class="icon-vector" width="30" height="30">
-              <use
-                  href=" ./images/symbol-defs1.svg#icon-vector">
-              </use>
+              <use href=" ./images/symbol-defs1.svg#icon-vector"></use>
             </svg>
           </button>
           <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
-            <div class="form-group">
-              <input class="form-input" type="text" name="user-name" id="name" placeholder=" " autofocus>
-                <label class="form-label" for="name">Имя</label>
-                  <svg class="icon-man" width="12" height="12">
-                    <use
-                        href=" ./images/symbol-defs1.svg#icon-man">
-                    </use>
-                  </svg>
-            </div>
-          
-            <div class="form-group">
-              <input class="form-input" type="tel" name="tel" id="tel" placeholder=" ">
-                <label class="form-label" for="tel">Телефон</label>
-                  <svg class="icon-tel" width="13" height="13">
-                      <use
-                          href=" ./images/symbol-defs1.svg#icon-tel">
-                      </use>
-                    </svg>
-            </div>
 
-            <div class="form-group">
-              
-              <input class="form-input" type="email" name="mail" id="mail" placeholder=" ">
-                <label class="form-label" for="mail">Почта</label>
-                  <svg class="icon-mail-1" width="15" height="12">
-                      <use
-                          href=" ./images/symbol-defs1.svg#icon-mail-1">
-                      </use>
-                   </svg>
-            </div>    
-            <div class="form-group">
-              <textarea name="commend" id="commend" rows="8" placeholder="Комментарий"></textarea>
-            </div>    
+          <label class="form-group">
+            <input
+              type="text" 
+              class="form-input"
+              name="user-name"
+              placeholder=" "
+              autofocus
+            />
+            <span class="form-label">Имя</span>
+            <svg class="icon" width="12" height="12">
+              <use href=" ./images/symbol-defs1.svg#icon-man"></use>
+            </svg>
+          </label>
 
-            <div class="checkbox-group">
-              <input class="form-checkbox" type="checkbox" name="consent" id="policy">
-              <label class="form-policy" for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> </label>
-            </div>
+          <label class="form-group">
+            <input type="tel" class="form-input" name="tel" placeholder=" " />
+            <span class="form-label">Телефон</span>
+            <svg class="icon" width="13" height="13">
+              <use href=" ./images/symbol-defs1.svg#icon-tel"></use>
+            </svg>
+          </label>
+
+          <label class="form-group">
+            <input
+              type="email"
+              class="form-input"
+              name="mail"
+              placeholder=" "
+            />
+            <span class="form-label">Почта</span>
+            <svg class="icon" width="15" height="12">
+              <use href=" ./images/symbol-defs1.svg#icon-mail-1"></use>
+            </svg>
+          </label>
+
+          <div class="form-group">
+            <textarea
+              name="commend"
+              id="commend"
+              rows="8"
+              placeholder="Комментарий"
+            ></textarea>
+          </div>
+
+             
+            <label class="checkbox-group">
+              <input
+              class="checkbox"
+              type="checkbox"
+              name="consent"
+              />
+              <svg class="icon-mark" width="16" height="15">
+              <use href=" ./images/symbol-defs1.svg#icon-mark"></use>
+            </svg>
+            <span class="form-policy"> Соглашаюсь с рассылкой и принимаю</span>
+              <a href="#">Условия договора</a>
+            </label>
         
-            <button class="form-button" data-close-modal type="submit">Отправить</button>
-        </form>
-      </div>
 
+          <button class="form-button" data-close-modal type="submit">
+            Отправить
+          </button>
+        </form>
+      <!-- </div> -->
     </div>
     <script>
       const refs = {
@@ -549,15 +575,15 @@
       function logBackdropClick() {
         console.log("Это клик в бекдроп");
       }
-    
+
       (() => {
         document
-          .querySelector('.js-speaker-form')
-          .addEventListener('submit', e => {
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
             e.preventDefault();
 
             new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`),
+              console.log(`${name}: ${value}`)
             );
 
             e.currentTarget.reset();
